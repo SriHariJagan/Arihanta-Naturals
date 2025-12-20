@@ -1,0 +1,280 @@
+.contactContainer {
+  font-family: "Poppins", sans-serif;
+  color: var(--dark-text);
+  line-height: 1.6;
+  background: var(--primary-bg);
+  padding-bottom: 4rem;
+}
+
+/* -------------------
+   Hero Section
+------------------- */
+.contactHeroSection {
+  position: relative;
+  height: 350px;
+  width: 100%;
+  overflow: hidden;
+}
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+.contactHeroOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 0 1.5rem;
+  max-width: 90%;
+}
+
+.contactHeroOverlay h1 {
+  font-size: 2.8rem; /* slightly larger for prominence */
+  margin-bottom: 0.75rem;
+  font-weight: 900; /* bolder for emphasis */
+  line-height: 1.2;
+  color: var(--accent-color);
+  letter-spacing: 1.5px; /* subtle spacing for elegance */
+  text-transform: uppercase;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* smoother shadow */
+}
+
+.contactHeroOverlay p {
+  font-size: 1.4rem; /* slightly larger for readability */
+  font-weight: 600;
+  color: var(--highlight-color);
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.35);
+  max-width: 650px; /* limits width for better readability */
+  margin: 0 auto;
+  line-height: 1.6; /* improves legibility */
+}
+
+
+/* -------------------
+   Message Section
+------------------- */
+.messageSection {
+  background: var(--card-bg);
+  padding: 50px 20px;
+  border-radius: 16px;
+  box-shadow: var(--shadow-light);
+  max-width: 750px;
+  margin: 50px auto;
+  text-align: center;
+}
+.messageSection h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+  display: inline-block;
+  padding-bottom: 4px;
+}
+.messageSection p {
+  font-size: 1rem;
+  color: var(--secondary-text);
+  margin-bottom: 30px;
+}
+
+/* -------------------
+   Contact Form
+------------------- */
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.contactForm input,
+.contactForm textarea {
+  padding: 14px 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  font-size: 1rem;
+  outline: none;
+  background: var(--primary-bg);
+  color: var(--primary-text);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.contactForm input:focus,
+.contactForm textarea:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 10px rgba(74, 144, 226, 0.25);
+}
+.contactForm textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+.contactForm button {
+  padding: 14px;
+  background: var(--accent-color);
+  color: var(--primary-text);
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.contactForm button:hover {
+  background: var(--highlight-color);
+  transform: translateY(-2px);
+}
+
+/* -------------------
+   Connect Section
+------------------- */
+.connectSection {
+  margin: 4rem auto;
+  width: 90%;
+  max-width: 1200px;
+}
+.connectSection h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+  display: inline-block;
+  padding-bottom: 6px;
+}
+.connectCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+/* Info Cards */
+.infoCard {
+  flex: 1 1 30%;
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: var(--shadow-light);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.infoCard:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+}
+.infoCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+  display: inline-block;
+  padding-bottom: 4px;
+}
+.infoItem {
+  margin-bottom: 0.8rem;
+}
+.infoItem strong {
+  display: block;
+  font-weight: 600;
+  color: var(--primary-text);
+}
+.infoItem p {
+  margin: 0.2rem 0 0 0;
+  color: var(--secondary-text);
+}
+
+/* Map Card */
+.mapCard {
+  flex: 1 1 35%;
+  background: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: var(--shadow-light);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.mapCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+.mapCard iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+  border: 0;
+  border-radius: 12px;
+}
+
+/* -------------------
+   FAQ Section
+------------------- */
+.faqSection {
+  width: 90%;
+  max-width: 800px;
+  margin: 3rem auto;
+}
+.faqSection h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+  display: inline-block;
+  padding-bottom: 4px;
+}
+.faqSection details {
+  margin-bottom: 12px;
+  border-radius: 12px;
+  background: var(--secondary-bg);
+  box-shadow: var(--shadow-light);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.faqSection summary {
+  font-weight: 600;
+  cursor: pointer;
+  padding: 14px 18px;
+  position: relative;
+  color: var(--primary-text);
+}
+.faqSection summary::after {
+  content: "+";
+  position: absolute;
+  right: 18px;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+.faqSection details[open] summary::after {
+  content: "-";
+}
+.faqSection p {
+  padding: 12px 18px;
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--secondary-text);
+  background: var(--primary-bg);
+  border-top: 1px solid var(--border-color);
+}
+
+/* -------------------
+   Responsive
+------------------- */
+@media (max-width: 1024px) {
+  .connectCards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .infoCard, .mapCard {
+    flex: 1 1 0%;
+  }
+}
+@media (max-width: 768px) {
+  .contactHeroOverlay h1 { font-size: 1.8rem; }
+}
+@media (max-width: 500px) {
+  .contactHeroOverlay h1 { font-size: 1.2rem; }
+  .contactHeroOverlay p { font-size: 1rem; }
+  .contactHeroOverlay { top: 40%; left: 0%; transform: translate(0%,0%); }
+  .faqSection summary { display: flex; justify-content: space-between; }
+}

@@ -1,0 +1,128 @@
+.testimonialsSection {
+  padding: 80px 0;
+  background-color: var(--primary-bg);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.testimonialsTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--primary-text);
+  margin-bottom: 60px;
+  font-family: var(--heading-font);
+}
+
+.testimonialsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.testimonialCard {
+  background-color: var(--secondary-bg);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.testimonialCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.testimonialRating {
+  margin-bottom: 20px;
+}
+
+.star {
+  font-size: 1.2rem;
+  margin: 0 2px;
+  color: #ddd;
+  transition: color 0.2s ease;
+}
+
+.star.filled {
+  color: var(--accent-color);
+}
+
+.testimonialText {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--secondary-text);
+  margin-bottom: 25px;
+  font-style: italic;
+  text-align: justify;
+}
+
+.testimonialAuthor {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--highlight-green);
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .testimonialsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .testimonialsTitle {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonialsSection {
+    padding: 60px 0;
+  }
+
+  .testimonialsGrid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .testimonialsTitle {
+    font-size: 1.75rem;
+    margin-bottom: 30px;
+  }
+
+  .testimonialCard {
+    padding: 25px;
+  }
+
+  .testimonialText {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .testimonialsSection {
+    padding: 40px 0;
+  }
+
+  .testimonialCard {
+    padding: 20px;
+  }
+
+  .testimonialsTitle {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,119 @@
+/* Gallery.module.css */
+
+/* Section Styling */
+.gallerySection {
+  padding: 6rem 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  background: var(--secondary-bg);
+}
+
+.gallerySection h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--accent-color);
+}
+
+/* Category Title */
+.galleryCategory {
+  margin-bottom: 3rem;
+}
+
+.galleryCategory h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--primary-text);
+  border-bottom: 2px solid var(--accent-color);
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+/* Grid for images */
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+/* Individual image card */
+.galleryItem {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galleryItem img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.galleryItem:hover img {
+  transform: scale(1.08);
+  filter: brightness(0.9);
+}
+
+/* Overlay title on hover */
+.galleryItem::after {
+  content: attr(data-title);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.8rem 0;
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.7));
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  font-size: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.galleryItem:hover::after {
+  opacity: 1;
+}
+
+/* LightGallery container customization */
+.galleryGrid a {
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .gallerySection {
+    padding: 4rem 1.5rem;
+  }
+
+  .galleryCategory h3 {
+    font-size: 1.3rem;
+  }
+
+  .galleryItem img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallerySection {
+    padding: 3rem 1rem;
+  }
+
+  .galleryCategory h3 {
+    font-size: 1.1rem;
+  }
+
+  .galleryItem img {
+    height: 150px;
+  }
+}
