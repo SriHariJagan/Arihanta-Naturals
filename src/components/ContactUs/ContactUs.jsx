@@ -116,23 +116,46 @@ const ContactUs = () => {
       <div className={styles.faqSection}>
         <h2>Frequently Asked Questions</h2>
         <details>
-          <summary>What makes Arihanta Naturals products unique?</summary>
+          <summary> What makes Arihanta Naturals truly different?</summary>
           <p>
-            Our products are 100% organic, sustainably sourced, and crafted with
-            care.
+            We{" "}
+            <b>
+              own our farmland and grow our produce like we do for our own
+              family
+            </b>
+            . With a <b>100-year legacy of farming</b>, our focus is purity,
+            care, and trust — not mass production.
           </p>
         </details>
         <details>
-          <summary>Where can I purchase your products?</summary>
-          <p>Visit our online store or select retail partners in India.</p>
+          <summary>Where do your products come from?</summary>
+          <p>
+            All products are <b>grown on our own land in India</b>, carefully
+            harvested and packed by our family to preserve natural quality and
+            freshness.
+          </p>
         </details>
         <details>
-          <summary>Do you offer international shipping?</summary>
-          <p>Yes, we ship worldwide with tracking available.</p>
+          <summary>Are your products 100% natural?</summary>
+          <p>
+            Yes. Our products are <b>completely natural</b>, free from
+            artificial colors, preservatives, and harmful chemicals.
+          </p>
         </details>
         <details>
-          <summary>Are your products gluten-free and vegan?</summary>
-          <p>Yes, all our products are gluten-free and vegan-friendly.</p>
+          <summary>Where do you deliver?</summary>
+          <p>
+            We currently <b>deliver across India only</b>. International
+            delivery is not available at this time.
+          </p>
+        </details>
+        <details>
+          <summary>How can I place an order?</summary>
+          <p>
+            We are in the process of setting up our <b>online distribution</b>. Until
+            then, you can place orders by <b>email or phone</b>, and we will assist you
+            personally.
+          </p>
         </details>
       </div>
     </div>

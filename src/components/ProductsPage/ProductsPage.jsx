@@ -37,9 +37,8 @@ const ProductsPage = () => {
                   {product.shortDesc}
                 </p>
 
-                <p className={styles.productDesc}>
-                  {product.description}
-                </p>
+                <p className={styles.productDesc} dangerouslySetInnerHTML={{ __html: product.description }} />
+
 
                 {/* Benefits */}
                 <div className={styles.benefitsWrapper}>

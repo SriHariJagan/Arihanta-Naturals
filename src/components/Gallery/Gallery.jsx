@@ -10,6 +10,7 @@ import lgThumbnail from "lightgallery/plugins/thumbnail";
 import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-zoom.css";
 import "lightgallery/css/lg-thumbnail.css";
+
 import { galleryItems } from "../../data";
 
 const Gallery = () => {
@@ -26,14 +27,15 @@ const Gallery = () => {
             plugins={[lgZoom, lgThumbnail]}
             elementClassNames={styles.galleryGrid}
           >
-            {cat.images.map((img, idx) => (
+            {Object.entries(cat.images).map(([name, img], idx) => (
               <a
                 key={idx}
                 href={img}
                 className={styles.galleryItem}
-                data-title={`${cat.category} ${idx + 1}`}
+                // data-sub-html={`<h4>${name}</h4><p>${cat.category}</p>`}
               >
-                <img src={img} alt={`${cat.category} ${idx + 1}`} />
+                <img src={img} alt={idx + 1} />
+                {/* <span className={styles.imageLabel}>{name}</span> */}
               </a>
             ))}
           </LightGallery>

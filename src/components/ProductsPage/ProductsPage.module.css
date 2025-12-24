@@ -18,7 +18,6 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-radius: 0 0 28px 28px;
 }
 
 .heroOverlay {
@@ -62,6 +61,7 @@
   display: flex;
   flex-direction: column; /* ✅ equal height */
   transition: all 0.35s ease;
+  height: max-content;
 }
 
 .productCard:hover {
@@ -116,7 +116,7 @@
   color: var(--secondary-text); /* ✅ different color */
   margin-bottom: 1rem;
   flex-grow: 1; /* ✅ pushes benefits to bottom */
-  text-align: center;
+  text-align: justify;
 }
 
 /* ===========================

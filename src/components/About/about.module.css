@@ -126,11 +126,24 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+  position: relative;
 }
 
 .card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 8px .5px var(--accent-hover);
+}
+
+.card span {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: var(--accent-color);
+  color: #fff;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-size: 0.9rem;
 }
 
 .card img {
@@ -152,6 +165,14 @@
   color: var(--secondary-text);
   flex-grow: 1;
 }
+
+.list{
+  text-align: left;
+  margin: auto;
+  width: 100%;
+  list-style-type: none;
+}
+
 
 /* =========================
    Gallery Section
@@ -213,14 +234,17 @@
 ========================= */
 .textSection {
   max-width: 900px;
-  margin: 90px auto;
+  margin: 2rem auto;
   text-align: center;
 }
+
+
 
 .textSection h2 {
   font-size: 2.3rem;
   color: var(--highlight-color);
-  margin-bottom: 24px;
+  margin-bottom: 0px;
+  text-align: left;
 }
 
 .textSection p {
@@ -301,6 +325,10 @@
     font-size: 2.1rem;
   }
 
+  .highlightSection{
+    gap: 10px;
+  }
+
   .textSection h2,
   .gallerySection h2,
   .videoText h2 {
@@ -322,3 +350,5 @@
     padding: 12px;
   }
 }
+
+

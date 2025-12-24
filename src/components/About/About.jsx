@@ -3,12 +3,14 @@ import styles from "./about.module.css";
 import aboutImg from "/images/aboutUs/aboutUs.jpg";
 
 const galleryItems = [
-  { title: "Infrastructure", img: "/images/aboutUs/buildings.jpg" },
-  { title: "Cattle Care", img: "/images/aboutUs/cattles.jpg" },
+  { title: "Room for farmers", img: "/images/aboutUs/buildings.jpg" },
+  { title: "Cattle", img: "/images/aboutUs/cattles.jpg" },
   { title: "Organic Crops", img: "/images/aboutUs/crops.jpg" },
-  { title: "Our People", img: "/images/aboutUs/people.jpg" },
+  { title: "Sprinklers", img: "/images/aboutUs/water.jpg" },
   { title: "Traditional Farming", img: "/images/aboutUs/tractor.jpg" },
+  { title: "Pound", img: "/images/aboutUs/pound.jpg" },
   { title: "Natural Water Sources", img: "/images/aboutUs/well.jpg" },
+  { title: "Temple", img: "/images/aboutUs/temple.jpg" },
 ];
 
 const AboutUs = () => {
@@ -58,29 +60,84 @@ const AboutUs = () => {
         </p>
       </section>
 
-      {/* 🧴 Core Strengths */}
+      {/* 🌾 Our Specialization */}
+      <section className={`${styles.textSection} ${styles.left}`}>
+        <h2>Our Specialization</h2>
+        <ul className={styles.list}>
+          <li>
+            <strong>Family-Owned Farmland</strong> – We grow on our own land,
+            not sourced from unknown farms.
+          </li>
+          <li>
+            <strong>100+ Years of Farming Legacy</strong> – Knowledge passed
+            through generations, refined with experience.
+          </li>
+          <li>
+            <strong>Natural & Sustainable Crops</strong> – Traditional grains,
+            pulses, seeds, vegetables, and cattle feed.
+          </li>
+          <li>
+            <strong>Farm-to-Home Approach</strong> – We grow, pack, and deliver
+            with full control over quality.
+          </li>
+        </ul>
+      </section>
+
+      {/* 🤍 Our Values */}
+      <section className={`${styles.textSection} ${styles.right}`}>
+        <h2>Our Values</h2>
+        <ul className={styles.list}>
+          <li>
+            <strong>Purity Over Profit</strong> – Quality and honesty matter
+            more than scale.
+          </li>
+          <li>
+            <strong>Trust & Transparency</strong> – What we grow is exactly what
+            we deliver.
+          </li>
+          <li>
+            <strong>Respect for Nature</strong> – Sustainable farming for future
+            generations.
+          </li>
+          <li>
+            <strong>Legacy & Responsibility</strong> – Carrying forward a
+            100-year farming heritage with pride.
+          </li>
+          <li>
+            <strong>Customer as Family</strong> – We serve customers the same
+            way we serve our own family.
+          </li>
+        </ul>
+      </section>
+
+      {/* 🔄 Our Process */}
       <section className={styles.highlightSection}>
         {[
           {
-            title: "Exquisite Cold-Pressed Oils",
-            desc: "Expertly extracted at low temperatures to preserve the full spectrum of nutrients, aroma, and flavor.",
+            title: "Soil First Farming",
+            desc: "We protect soil health using natural methods and crop rotation.",
           },
           {
-            title: "Premium Natural Ingredients",
-            desc: "Sourced directly from trusted local farmers, ensuring authenticity, purity, and traceability in every product.",
+            title: "Careful Cultivation",
+            desc: "Crops are grown with the same care as food for our own family.",
           },
           {
-            title: "100% Chemical-Free",
-            desc: "Free from additives, artificial colors, or preservatives — delivering nature’s goodness as it was meant to be.",
+            title: "Selective Harvesting",
+            desc: "Only well-grown produce is harvested at the right time.",
           },
           {
-            title: "Heritage & Tradition",
-            desc: "Crafted using time-honored methods refined over generations, blending ancestral wisdom with modern care.",
+            title: "Hygienic Packing",
+            desc: "Clean, safe, and minimal processing to retain natural goodness.",
           },
-        ].map((item, i) => (
+          {
+            title: "Direct Delivery",
+            desc: "Packed at source and delivered directly to customers across India.",
+          },
+        ].map((step, i) => (
           <div key={i} className={styles.card}>
-            <h3>{item.title}</h3>
-            <p>{item.desc}</p>
+            <span>{i + 1}</span>
+            <h3>{step.title}</h3>
+            <p>{step.desc}</p>
           </div>
         ))}
       </section>

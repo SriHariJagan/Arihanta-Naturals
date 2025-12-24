@@ -1,100 +1,200 @@
 export const products = [
   {
     id: 1,
-    name: "Cold Pressed Groundnut Oil",
-    slug: "cold-pressed-groundnut-oil",
-    price: "₹450 / Litre",
-    image: "/images/products/1.png",
-    shortDesc: "100% natural cold pressed groundnut oil.",
+    name: "बाजरा (Pearl Millet)",
+    slug: "bajra-pearl-millet",
+    price: "Contact for Price",
+    image: "/images/products/bajra.png",
+    shortDesc: "Organically grown, gluten-free millet rich in iron and fiber.",
     description:
-      "Our Cold Pressed Groundnut Oil is extracted using traditional wooden churners. It retains natural aroma, nutrients, and purity without chemicals.",
+      "Arihanta Naturals Bajra is <strong>organically grown on our own family land</strong>, following farming wisdom refined over 100 years. Naturally rich in iron, fiber, and minerals, it supports digestion and long-lasting energy. Being gluten-free, it suits modern health needs without losing traditional strength. Carefully harvested and hygienically packed at source. Pure nutrition, grown the way we grow for our own family.",
     benefits: [
+      "Gluten-free",
+      "Rich in iron & fiber",
+      "Supports digestion",
+      "Sustained energy",
+    ],
+    category: "Grains",
+  },
+
+  {
+    id: 2,
+    name: "जौ (Barley)",
+    slug: "barley-jau",
+    price: "Contact for Price",
+    image: "/images/products/barley.png",
+    shortDesc: "Cooling grain supporting heart and gut health.",
+    description:
+      "Arihanta Naturals Barley is <strong>organically cultivated</strong> to preserve its cooling and cleansing properties. High in soluble fiber, it supports heart health, metabolism, and gut balance. Traditionally valued for detox and weight management. Grown on our own land with soil-first farming practices. Packed fresh to retain natural taste and benefits.",
+    benefits: [
+      "Supports heart health",
+      "Aids digestion",
+      "Cooling grain",
+      "Weight management",
+    ],
+    category: "Grains",
+  },
+
+  {
+    id: 3,
+    name: "काला गेहूं (Black Wheat)",
+    slug: "black-wheat",
+    price: "Contact for Price",
+    image: "/images/products/black-wheat.png",
+    shortDesc: "Antioxidant-rich wheat with higher protein.",
+    description:
+      "Arihanta Naturals Black Wheat is a <strong>rare, organically grown grain</strong> rich in antioxidants and higher protein. It supports blood sugar control, heart health, and immunity. Cultivated on our family farms using traditional methods and natural inputs. A healthier alternative to regular wheat without compromising taste.",
+    benefits: [
+      "Rich in antioxidants",
+      "Supports blood sugar control",
+      "High protein",
       "Heart healthy",
-      "Rich in Vitamin E",
-      "No preservatives",
-      "Traditional extraction",
     ],
-    category: "Oils",
+    category: "Grains",
   },
+
   {
-    id: 2,
-    name: "Organic Turmeric Powder",
-    slug: "organic-turmeric-powder",
-    price: "₹220 / 250g",
-    image: "/images/products/1.png",
-    shortDesc: "Pure, aromatic turmeric from organic farms.",
+    id: 4,
+    name: "गेहूं (Wheat)",
+    slug: "wheat",
+    price: "Contact for Price",
+    image: "/images/products/wheat.png",
+    shortDesc: "Pure, organically grown daily staple grain.",
     description:
-      "Arihanta Naturals Turmeric Powder is stone-ground from organically grown turmeric roots, ensuring rich color and strong aroma.",
+      "Arihanta Naturals Wheat is <strong>organically grown on our own farms</strong>, ensuring purity and consistency. Rich in natural fiber and nutrients, it provides daily strength and balanced nutrition. Grown with care passed down through generations of farmers. Cleanly harvested and hygienically packed.",
     benefits: [
-      "Boosts immunity",
-      "Anti-inflammatory",
-      "No artificial color",
+      "Daily nutrition",
+      "High fiber",
+      "Pure & organic",
+      "Trusted staple",
     ],
-    category: "Spices",
+    category: "Grains",
   },
+
   {
-    id: 2,
-    name: "Organic Turmeric Powder",
-    slug: "organic-turmeric-powder",
-    price: "₹220 / 250g",
-    image: "/images/products/1.png",
-    shortDesc: "Pure, aromatic turmeric from organic farms.",
+    id: 5,
+    name: "चना (Chickpea / Gram)",
+    slug: "chickpea-gram",
+    price: "Contact for Price",
+    image: "/images/products/chana.png",
+    shortDesc: "Protein-rich legumes for energy and strength.",
     description:
-      "Arihanta Naturals Turmeric Powder is stone-ground from organically grown turmeric roots, ensuring rich color and strong aroma.",
+      "Arihanta Naturals Chickpeas are <strong>organically cultivated</strong>, protein-rich, and naturally nourishing. They support muscle health, digestion, and sustained energy. Grown on our land without harmful chemicals. Carefully sorted and packed to maintain freshness.",
     benefits: [
-      "Boosts immunity",
-      "Anti-inflammatory",
-      "No artificial color",
+      "High protein",
+      "Supports muscle health",
+      "Improves digestion",
+      "Sustained energy",
     ],
-    category: "Spices",
+    category: "Pulses",
   },
+
   {
-    id: 2,
-    name: "Organic Turmeric Powder",
-    slug: "organic-turmeric-powder",
-    price: "₹220 / 250g",
-    image: "/images/products/1.png",
-    shortDesc: "Pure, aromatic turmeric from organic farms.",
+    id: 6,
+    name: "ग्वार (Cluster Bean / Guar)",
+    slug: "guar-cluster-bean",
+    price: "Contact for Price",
+    image: "/images/products/guar.png",
+    shortDesc: "High-fiber crop supporting sugar and cholesterol balance.",
     description:
-      "Arihanta Naturals Turmeric Powder is stone-ground from organically grown turmeric roots, ensuring rich color and strong aroma.",
+      "Arihanta Naturals Guar is <strong>organically grown</strong> for high fiber content and digestive wellness. Known to support blood sugar balance and cholesterol management. Cultivated using natural farming techniques that protect soil health.",
     benefits: [
-      "Boosts immunity",
-      "Anti-inflammatory",
-      "No artificial color",
+      "High fiber",
+      "Controls blood sugar",
+      "Supports digestion",
+      "Heart friendly",
     ],
-    category: "Spices",
+    category: "Pulses",
   },
+
   {
-    id: 2,
-    name: "Organic Turmeric Powder",
-    slug: "organic-turmeric-powder",
-    price: "₹220 / 250g",
-    image: "/images/products/1.png",
-    shortDesc: "Pure, aromatic turmeric from organic farms.",
+    id: 7,
+    name: "इसबगोल (Psyllium Husk)",
+    slug: "isabgol-psyllium-husk",
+    price: "Contact for Price",
+    image: "/images/products/isabgol.png",
+    shortDesc: "Natural fiber for digestive wellness.",
     description:
-      "Arihanta Naturals Turmeric Powder is stone-ground from organically grown turmeric roots, ensuring rich color and strong aroma.",
+      "Arihanta Naturals Isabgol is <strong>organically grown and minimally processed</strong> to preserve its natural fiber strength. Widely trusted for digestive health and gut cleansing. Gentle, effective, and suitable for daily wellness routines.",
     benefits: [
-      "Boosts immunity",
-      "Anti-inflammatory",
-      "No artificial color",
+      "Improves digestion",
+      "Gut cleansing",
+      "Natural fiber",
+      "Daily wellness",
     ],
-    category: "Spices",
+    category: "Health Foods",
   },
+
   {
-    id: 2,
-    name: "Organic Turmeric Powder",
-    slug: "organic-turmeric-powder",
-    price: "₹220 / 250g",
-    image: "/images/products/1.png",
-    shortDesc: "Pure, aromatic turmeric from organic farms.",
+    id: 8,
+    name: "मेथी (Fenugreek)",
+    slug: "fenugreek-methi",
+    price: "Contact for Price",
+    image: "/images/products/methi.png",
+    shortDesc: "Medicinal seed for metabolism and sugar control.",
     description:
-      "Arihanta Naturals Turmeric Powder is stone-ground from organically grown turmeric roots, ensuring rich color and strong aroma.",
+      "Arihanta Naturals Fenugreek is <strong>organically cultivated</strong> to retain its medicinal and nutritional value. Supports blood sugar regulation, digestion, and metabolism. Carefully dried and packed to preserve aroma and potency.",
     benefits: [
-      "Boosts immunity",
-      "Anti-inflammatory",
-      "No artificial color",
+      "Controls blood sugar",
+      "Boosts metabolism",
+      "Improves digestion",
+      "Medicinal value",
     ],
-    category: "Spices",
+    category: "Seeds",
+  },
+
+  {
+    id: 9,
+    name: "सरसों (Mustard)",
+    slug: "mustard-sarson",
+    price: "Contact for Price",
+    image: "/images/products/mustard.png",
+    shortDesc: "Pure mustard with rich natural oils.",
+    description:
+      "Arihanta Naturals Mustard is <strong>organically grown</strong> for purity, strength, and rich natural oils. Supports digestion, metabolism, and joint health. Carefully processed to retain flavor and nutrition.",
+    benefits: [
+      "Rich natural oils",
+      "Improves digestion",
+      "Joint health",
+      "Pure & organic",
+    ],
+    category: "Seeds",
+  },
+
+  {
+    id: 10,
+    name: "सब्ज़ियाँ (Vegetables)",
+    slug: "organic-vegetables",
+    price: "Seasonal Pricing",
+    image: "/images/products/vegetables.png",
+    shortDesc: "Fresh, seasonal organic vegetables.",
+    description:
+      "Arihanta Naturals Vegetables are <strong>organically grown for our family and yours</strong>. Fresh, seasonal, and naturally cultivated to deliver essential vitamins and immunity support. Harvested only when ready.",
+    benefits: [
+      "Farm fresh",
+      "Seasonal produce",
+      "Rich in vitamins",
+      "Chemical-free",
+    ],
+    category: "Vegetables",
+  },
+
+  {
+    id: 11,
+    name: "पशु आहार (Cattle Feed)",
+    slug: "cattle-feed",
+    price: "Contact for Price",
+    image: "/images/products/cattle-feed.png",
+    shortDesc: "Nutritious organic feed for healthy livestock.",
+    description:
+      "Arihanta Naturals Cattle Feed is <strong>organically grown and nutritionally balanced</strong> for animal health. Supports strength, digestion, and better milk quality. Free from harmful chemicals and artificial enhancers.",
+    benefits: [
+      "Improves animal health",
+      "Better milk quality",
+      "Chemical-free",
+      "Balanced nutrition",
+    ],
+    category: "Cattle Feed",
   },
 ];
 
@@ -102,40 +202,150 @@ export const products = [
 export const productsData = [
   {
     id: 1,
-    name: " Black Pepper",
-    price: 250,
+    name: "बाजरा (Pearl Millet)",
+    price: 90,
     image: "/images/products/1.png",
-    category: "Spices"
+    category: "Grains",
   },
   {
     id: 2,
-    name: " Turmeric Powder",
-    price: 180,
+    name: "जौ (Barley)",
+    price: 80,
     image: "/images/products/1.png",
-    category: "Spices"
+    category: "Grains",
   },
   {
     id: 3,
-    name: " Moong Dal",
+    name: "काला गेहूं (Black Wheat)",
     price: 120,
     image: "/images/products/1.png",
-    category: "Pulses"
+    category: "Grains",
   },
   {
     id: 4,
-    name: " Quinoa",
-    price: 350,
+    name: "पशु आहार (Cattle Feed)",
+    price: 50,
     image: "/images/products/1.png",
-    category: "Grains"
+    category: "Cattle Feed",
   },
   {
     id: 5,
-    name: " Mustard Oil",
-    price: 200,
+    name: "चना (Chickpea / Gram)",
+    price: 110,
     image: "/images/products/1.png",
-    category: "Oils"
-  }
+    category: "Pulses",
+  },
+  {
+    id: 6,
+    name: "ग्वार (Cluster Bean / Guar)",
+    price: 95,
+    image: "/images/products/1.png",
+    category: "Vegetables",
+  },
+  {
+    id: 7,
+    name: "इसबगोल (Psyllium Husk)",
+    price: 180,
+    image: "/images/products/1.png",
+    category: "Seeds",
+  },
+  {
+    id: 8,
+    name: "मेथी (Fenugreek)",
+    price: 90,
+    image: "/images/products/1.png",
+    category: "Seeds",
+  },
+  {
+    id: 9,
+    name: "सरसों (Mustard)",
+    price: 100,
+    image: "/images/products/1.png",
+    category: "Seeds",
+  },
+  {
+    id: 10,
+    name: "सब्ज़ियाँ (Vegetables)",
+    price: 60,
+    image: "/images/products/1.png",
+    category: "Vegetables",
+  },
+  {
+    id: 11,
+    name: "गेहूं (Wheat)",
+    price: 70,
+    image: "/images/products/1.png",
+    category: "Grains",
+  },
+  {
+    id: 12,
+    name: "Desi Ghee",
+    price: 650,
+    image: "/images/products/1.png",
+    category: "Dairy",
+  },
 ];
+
+
+export const galleryItems = [
+  {
+    category: "Infrastructure",
+    images: {
+      "0": "/images/gallery/buildings/buildings.jpg",
+      "1": '/images/gallery/buildings/2.jpg',
+      "3": '/images/gallery/buildings/4.jpg',
+      "4": '/images/gallery/buildings/5.jpg',
+      "5": '/images/gallery/buildings/6.jpg',
+    },
+  },
+  {
+    category: "Cattle Care",
+    images: {
+      "1": "/images/gallery/cattles/cattles.jpg",
+      "2": '/images/gallery/cattles/2.jpg',
+      "3": '/images/gallery/cattles/3.jpg',
+      "4": '/images/gallery/cattles/4.jpg',
+    },
+  },
+  {
+    category: "Organic Crops",
+    images: {
+      "1": "/images/gallery/crops/crops.jpg",
+      "2": '/images/gallery/crops/2.jpg',
+      "3": '/images/gallery/crops/3.jpg',
+      "4": '/images/gallery/crops/4.jpg',
+      "5": '/images/gallery/crops/5.jpg',
+      "6": '/images/gallery/crops/6.jpg',
+      "7": '/images/gallery/crops/7.jpg',
+      "8": '/images/gallery/crops/8.jpg',
+      "9": '/images/gallery/crops/9.jpg',
+      "10": '/images/gallery/crops/10.jpg',
+      "11": '/images/gallery/crops/11.jpg',
+    },
+  },
+
+  {
+    category: "Traditional Farming",
+    images: {
+      "1": "/images/gallery/tractor/tractor.jpg",
+      "2": "/images/gallery/tractor/2.jpg",
+      "3": "/images/gallery/tractor/3.jpg",
+      "4": "/images/gallery/tractor/4.jpg",
+      "5": "/images/gallery/tractor/5.jpg",
+    },
+  },
+  {
+    category: "Natural Water Sources",
+    images: {
+      "1": "/images/gallery/well/well.jpg",
+      "2": "/images/gallery/well/pound.jpg",
+      "3": "/images/gallery/well/1.jpg",
+      "4": "/images/gallery/well/2.jpg",
+    },
+  },
+];
+
+
 
 
 export const testimonialsData = [
@@ -143,76 +353,21 @@ export const testimonialsData = [
     id: 1,
     name: "Aisha Sharma",
     rating: 5,
-    testimonial: "Pure Harvest Organics has transformed our kitchen! The quality of their products is unmatched, and the flavor of everything we've tried is simply incredible. Highly recommend the Ghee and Spices!"
+    testimonial:
+      "Pure Harvest Organics has transformed our kitchen! The quality of their products is unmatched, and the flavor of everything we've tried is simply incredible. Highly recommend the Ghee and Spices!",
   },
   {
     id: 2,
     name: "Rahul Verma",
     rating: 5,
-    testimonial: "I've been looking for truly organic products, and this is it. The cold-pressed oils are fantastic for cooking, and I feel good knowing exactly where my food comes from. Excellent service too!"
+    testimonial:
+      "I've been looking for truly organic products, and this is it. The cold-pressed oils are fantastic for cooking, and I feel good knowing exactly where my food comes from. Excellent service too!",
   },
   {
     id: 3,
     name: "Priya Singh",
     rating: 5,
-    testimonial: "Their pulses are fresh and cook perfectly every time. I appreciate the variety and the commitment to sustainable farming. My family loves the millets for breakfast."
-  }
-];
-
-
-
-
-export const galleryItems = [
-  {
-    category: "Infrastructure",
-    images: [
-      "/images/aboutUs/buildings.jpg",
-      "/images/aboutUs/buildings.jpg",
-      "/images/aboutUs/buildings.jpg",
-      "/images/aboutUs/buildings.jpg",
-      "/images/aboutUs/buildings.jpg",
-    ],
-  },
-  {
-    category: "Cattle Care",
-    images: [
-      "/images/aboutUs/cattles.jpg",
-      "/images/aboutUs/cattles.jpg",
-      "/images/aboutUs/cattles.jpg",
-      "/images/aboutUs/cattles.jpg",
-    ],
-  },
-  {
-    category: "Organic Crops",
-    images: [
-      "/images/aboutUs/crops.jpg",
-      "/images/aboutUs/crops.jpg",
-      "/images/aboutUs/crops.jpg",
-      "/images/aboutUs/crops.jpg",
-    ],
-  },
-  {
-    category: "Our People",
-    images: [
-      "/images/aboutUs/people.jpg",
-      "/images/aboutUs/people.jpg",
-      "/images/aboutUs/people.jpg",
-    ],
-  },
-  {
-    category: "Traditional Farming",
-    images: [
-      "/images/aboutUs/tractor.jpg",
-      "/images/aboutUs/tractor.jpg",
-      "/images/aboutUs/tractor.jpg",
-    ],
-  },
-  {
-    category: "Natural Water Sources",
-    images: [
-      "/images/aboutUs/well.jpg",
-      "/images/aboutUs/well.jpg",
-      "/images/aboutUs/well.jpg",
-    ],
+    testimonial:
+      "Their pulses are fresh and cook perfectly every time. I appreciate the variety and the commitment to sustainable farming. My family loves the millets for breakfast.",
   },
 ];
