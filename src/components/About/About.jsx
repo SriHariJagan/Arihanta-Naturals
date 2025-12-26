@@ -172,17 +172,52 @@ const AboutUs = () => {
               <th>Brand</th>
               <td>Arihanta Naturals</td>
             </tr>
+
             <tr>
               <th>Specialization</th>
-              <td>Cold Pressed Oils & Natural Products</td>
+              <td>Cold-Pressed Oils & Natural Farm Products</td>
             </tr>
+
             <tr>
-              <th>Process</th>
-              <td>Traditional Wooden Cold Press</td>
+              <th>Processing Method</th>
+              <td>Traditional Wooden Cold-Press (Kachi Ghani)</td>
             </tr>
+
             <tr>
-              <th>Values</th>
+              <th>Core Values</th>
               <td>Purity • Transparency • Sustainability</td>
+            </tr>
+
+            <tr>
+              <th>Founder</th>
+              <td>Sunil Mehta</td>
+            </tr>
+
+            <tr>
+              <th>Location</th>
+              <td>Naraina, Jaipur, Rajasthan, India</td>
+            </tr>
+
+            <tr>
+              <th>Established</th>
+              <td>2022</td>
+            </tr>
+
+            <tr>
+              <th>Farmland Area</th>
+              <td>20+ Acres</td>
+            </tr>
+
+            <tr>
+              <th>Main Crops</th>
+              <td>Black Wheat (Isarbol), Wheat, Groundnut, Chickpea</td>
+            </tr>
+
+            <tr>
+              <th>Farming Practices</th>
+              <td>
+                Organic Farming • Solar Energy • Cow-Based Natural Farming
+              </td>
             </tr>
           </tbody>
         </table>
