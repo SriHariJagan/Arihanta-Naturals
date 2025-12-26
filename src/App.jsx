@@ -7,6 +7,8 @@ import BestSellers from "./components/Bestsellers/Bestsellers";
 import PuritySection from "./components/PuritySection/PuritySection";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Footer from "./components/Footer/Footer";
+import { FadeLoader } from "react-spinners";
+import ScrollToTop from "./components/ScrollToTop";
 
 // Lazy-loaded pages
 const AboutUs = lazy(() => import("./components/About/About"));
@@ -24,12 +26,30 @@ const HomeSection = () => {
   );
 };
 
+const PageLoader = () => {
+  return (
+    <div
+      style={{
+        height: "100vh",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      <FadeLoader color="var(--secondary-text)" />
+    </div>
+  );
+};
+
+
 const App = () => {
   return (
     <>
       <Navbar />
 
-      <Suspense fallback={<div style={{ textAlign: "center", marginTop: "50px" }}>Loading...</div>}>
+      <ScrollToTop />
+
+      <Suspense fallback={<PageLoader />}>
         <Routes>
           <Route path="/" element={<HomeSection />} />
           <Route path="/about" element={<AboutUs />} />

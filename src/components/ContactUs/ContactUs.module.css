@@ -6,6 +6,24 @@
   padding-bottom: 2rem;
 }
 
+/* Validation Errors */
+.error {
+  display: block;
+  font-size: 0.75rem;
+  color: #e63946;
+  margin-top: 4px;
+  text-align: left;
+}
+
+.success {
+  color: #2e7d32;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+
+
 /* -------------------
    Hero Section
 ------------------- */
@@ -89,6 +107,13 @@
   flex-direction: column;
   gap: 16px;
 }
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
 .contactForm input,
 .contactForm textarea {
   padding: 14px 16px;
@@ -99,6 +124,7 @@
   background: var(--primary-bg);
   color: var(--primary-text);
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
 }
 .contactForm input:focus,
 .contactForm textarea:focus {
@@ -263,7 +289,6 @@
 @media (max-width: 1024px) {
   .connectCards {
     flex-direction: column;
-    align-items: center;
   }
   .infoCard, .mapCard {
     flex: 1 1 0%;
@@ -277,4 +302,7 @@
   .contactHeroOverlay p { font-size: 1rem; }
   .contactHeroOverlay { top: 40%; left: 0%; transform: translate(0%,0%); }
   .faqSection summary { display: flex; justify-content: space-between; }
+   .formRow {
+    grid-template-columns: 1fr;
+  }
 }

@@ -1,9 +1,118 @@
+import { useEffect, useState } from "react";
 import styles from "./ContactUs.module.css";
 
+const BASE_URL =  "https://www.jkgranimarmo.in"
+
 const ContactUs = () => {
-  const handleSubmit = (e) => {
+  const [formData, setFormData] = useState({
+    name: "",
+    subject: "",
+    email: "",
+    mobile: "",
+    message: "",
+  });
+
+  const [errors, setErrors] = useState({});
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState("");
+
+
+  useEffect(() => {
+  if (success || errors) {
+    const timer = setTimeout(() => {
+      setSuccess("");
+      setErrors("");
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }
+}, [success, errors]);
+
+  /* ================= VALIDATION ================= */
+  const validate = () => {
+    const newErrors = {};
+
+    if (!formData.name.trim()) {
+      newErrors.name = "Name is required";
+    }
+
+    if (!formData.subject.trim()) {
+      newErrors.subject = "Subject is required";
+    }
+
+    if (!formData.email) {
+      newErrors.email = "Email is required";
+    } else if (!/^\S+@\S+\.\S+$/.test(formData.email)) {
+      newErrors.email = "Enter a valid email address";
+    }
+
+    if (!formData.mobile) {
+      newErrors.mobile = "Mobile number is required";
+    } else if (!/^[6-9]\d{9}$/.test(formData.mobile)) {
+      newErrors.mobile = "Enter a valid 10-digit mobile number";
+    }
+
+    if (!formData.message.trim()) {
+      newErrors.message = "Message cannot be empty";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  /* ================= INPUT CHANGE ================= */
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setErrors({ ...errors, [e.target.name]: "" });
+  };
+
+  /* ================= SUBMIT ================= */
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form submitted");
+
+    if (!validate()) return;
+
+    const payload = {
+      type: "contact",
+      name: formData.name,
+      product: formData.subject,
+      email: formData.email,
+      mobile: formData.mobile,
+      description: formData.message,
+    };
+
+    try {
+      setLoading(true);
+      setSuccess("");
+      setErrors({});
+
+      const res = await fetch(`${BASE_URL}/mails/enquiry`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      if (!res.ok) {
+        throw new Error("Failed to send message");
+      }
+
+      const data = await res.json();
+      setSuccess(data.message || "✅ Message sent successfully!");
+
+      // Reset form
+      setFormData({
+        name: "",
+        subject: "",
+        email: "",
+        mobile: "",
+        message: "",
+      });
+    } catch (err) {
+      console.error(err);
+      alert("❌ Failed to send message. Please try again later.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -22,20 +131,95 @@ const ContactUs = () => {
       </div>
 
       {/* Contact Form */}
-      <div className={styles.messageSection}>
-        <h2>Send Us a Message</h2>
-        <p>
-          Fill out the form below and we'll get back to you as soon as possible.
-        </p>
+      <div className={styles.contactContainer}>
+        <div className={styles.messageSection}>
+          <h2>Send Us a Message</h2>
 
-        <form onSubmit={handleSubmit} className={styles.contactForm}>
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <input type="text" placeholder="Subject" required />
-          <textarea placeholder="Your Message" rows="6" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
+          <form onSubmit={handleSubmit} className={styles.contactForm}>
+            <div className={styles.formRow}>
+              <div>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  value={formData.name}
+                  onChange={handleChange}
+                />
+                {errors.name && (
+                  <small className={styles.error}>{errors.name}</small>
+                )}
+              </div>
+
+              <div>
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Product"
+                  value={formData.subject}
+                  onChange={handleChange}
+                />
+                {errors.subject && (
+                  <small className={styles.error}>{errors.subject}</small>
+                )}
+              </div>
+            </div>
+
+            <div className={styles.formRow}>
+              <div>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  value={formData.email}
+                  onChange={handleChange}
+                />
+                {errors.email && (
+                  <small className={styles.error}>{errors.email}</small>
+                )}
+              </div>
+
+              <div>
+                <input
+                  type="tel"
+                  name="mobile"
+                  placeholder="Mobile Number"
+                  value={formData.mobile}
+                  onChange={(e) => {
+                    const value = e.target.value.replace(/\D/g, "");
+                    if (value.length <= 10) {
+                      setFormData({ ...formData, mobile: value });
+                    }
+                    setErrors({ ...errors, mobile: "" });
+                  }}
+                />
+                {errors.mobile && (
+                  <small className={styles.error}>{errors.mobile}</small>
+                )}
+              </div>
+            </div>
+
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              rows="5"
+              value={formData.message}
+              onChange={handleChange}
+            />
+
+            {errors.message && (
+              <small className={styles.error}>{errors.message}</small>
+            )}
+
+            {success && <p className={styles.success}>{success}</p>}
+
+            <button type="submit" disabled={loading}>
+              {loading ? "Sending..." : "Send Message"}
+            </button>
+          </form>
+        </div>
       </div>
+
+
 
       {/* Connect Section */}
       <div className={styles.connectSection}>
@@ -152,9 +336,9 @@ const ContactUs = () => {
         <details>
           <summary>How can I place an order?</summary>
           <p>
-            We are in the process of setting up our <b>online distribution</b>. Until
-            then, you can place orders by <b>email or phone</b>, and we will assist you
-            personally.
+            We are in the process of setting up our <b>online distribution</b>.
+            Until then, you can place orders by <b>email or phone</b>, and we
+            will assist you personally.
           </p>
         </details>
       </div>

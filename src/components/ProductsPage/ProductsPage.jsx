@@ -3,6 +3,16 @@ import styles from "./ProductsPage.module.css";
 import { products } from "../../data";
 
 const ProductsPage = () => {
+  // 🔥 Sort products by content size (large cards first)
+  const sortedProducts = [...products].sort((a, b) => {
+    const aSize =
+      a.description.length + (a.benefits?.join("").length || 0);
+    const bSize =
+      b.description.length + (b.benefits?.join("").length || 0);
+
+    return bSize - aSize;
+  });
+
   return (
     <div className={styles.productsPage}>
       {/* Hero Section */}
@@ -17,7 +27,7 @@ const ProductsPage = () => {
       {/* Products Grid */}
       <section className={styles.productsSection}>
         <div className={styles.productGrid}>
-          {products.map((product) => (
+          {sortedProducts.map((product) => (
             <article key={product.id} className={styles.productCard}>
               
               {/* Image */}
@@ -26,6 +36,7 @@ const ProductsPage = () => {
                   src={product.image}
                   alt={product.name}
                   className={styles.productImage}
+                  loading="lazy"
                 />
               </div>
 
@@ -37,8 +48,10 @@ const ProductsPage = () => {
                   {product.shortDesc}
                 </p>
 
-                <p className={styles.productDesc} dangerouslySetInnerHTML={{ __html: product.description }} />
-
+                <p
+                  className={styles.productDesc}
+                  dangerouslySetInnerHTML={{ __html: product.description }}
+                />
 
                 {/* Benefits */}
                 <div className={styles.benefitsWrapper}>

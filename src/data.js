@@ -4,7 +4,7 @@ export const products = [
     name: "बाजरा (Pearl Millet)",
     slug: "bajra-pearl-millet",
     price: "Contact for Price",
-    image: "/images/products/bajra.png",
+    image: "/images/products/Bajra/Bajra-6.png",
     shortDesc: "Organically grown, gluten-free millet rich in iron and fiber.",
     description:
       "Arihanta Naturals Bajra is <strong>organically grown on our own family land</strong>, following farming wisdom refined over 100 years. Naturally rich in iron, fiber, and minerals, it supports digestion and long-lasting energy. Being gluten-free, it suits modern health needs without losing traditional strength. Carefully harvested and hygienically packed at source. Pure nutrition, grown the way we grow for our own family.",
@@ -22,7 +22,7 @@ export const products = [
     name: "जौ (Barley)",
     slug: "barley-jau",
     price: "Contact for Price",
-    image: "/images/products/barley.png",
+    image: "/images/products/Barlee/Barlee-5.png",
     shortDesc: "Cooling grain supporting heart and gut health.",
     description:
       "Arihanta Naturals Barley is <strong>organically cultivated</strong> to preserve its cooling and cleansing properties. High in soluble fiber, it supports heart health, metabolism, and gut balance. Traditionally valued for detox and weight management. Grown on our own land with soil-first farming practices. Packed fresh to retain natural taste and benefits.",
@@ -40,7 +40,7 @@ export const products = [
     name: "काला गेहूं (Black Wheat)",
     slug: "black-wheat",
     price: "Contact for Price",
-    image: "/images/products/black-wheat.png",
+    image: "/images/products/Black Wheat/Black wheat Main.png",
     shortDesc: "Antioxidant-rich wheat with higher protein.",
     description:
       "Arihanta Naturals Black Wheat is a <strong>rare, organically grown grain</strong> rich in antioxidants and higher protein. It supports blood sugar control, heart health, and immunity. Cultivated on our family farms using traditional methods and natural inputs. A healthier alternative to regular wheat without compromising taste.",
@@ -55,46 +55,28 @@ export const products = [
 
   {
     id: 4,
-    name: "गेहूं (Wheat)",
-    slug: "wheat",
+    name: "पशु आहार (Cattle Feed)",
+    slug: "cattle-feed",
     price: "Contact for Price",
-    image: "/images/products/wheat.png",
-    shortDesc: "Pure, organically grown daily staple grain.",
+    image: "/images/products/Cattle Food/Main.png",
+    shortDesc: "Nutritious organic feed for healthy livestock.",
     description:
-      "Arihanta Naturals Wheat is <strong>organically grown on our own farms</strong>, ensuring purity and consistency. Rich in natural fiber and nutrients, it provides daily strength and balanced nutrition. Grown with care passed down through generations of farmers. Cleanly harvested and hygienically packed.",
+      "Arihanta Naturals Cattle Feed is <strong>organically grown and nutritionally balanced</strong> for animal health. Supports strength, digestion, and better milk quality. Free from harmful chemicals and artificial enhancers.",
     benefits: [
-      "Daily nutrition",
-      "High fiber",
-      "Pure & organic",
-      "Trusted staple",
+      "Improves animal health",
+      "Better milk quality",
+      "Chemical-free",
+      "Balanced nutrition",
     ],
-    category: "Grains",
+    category: "Cattle Feed",
   },
 
   {
     id: 5,
-    name: "चना (Chickpea / Gram)",
-    slug: "chickpea-gram",
-    price: "Contact for Price",
-    image: "/images/products/chana.png",
-    shortDesc: "Protein-rich legumes for energy and strength.",
-    description:
-      "Arihanta Naturals Chickpeas are <strong>organically cultivated</strong>, protein-rich, and naturally nourishing. They support muscle health, digestion, and sustained energy. Grown on our land without harmful chemicals. Carefully sorted and packed to maintain freshness.",
-    benefits: [
-      "High protein",
-      "Supports muscle health",
-      "Improves digestion",
-      "Sustained energy",
-    ],
-    category: "Pulses",
-  },
-
-  {
-    id: 6,
     name: "ग्वार (Cluster Bean / Guar)",
     slug: "guar-cluster-bean",
     price: "Contact for Price",
-    image: "/images/products/guar.png",
+    image: "/images/products/Cluster Bean/Cluster Bean-2.png",
     shortDesc: "High-fiber crop supporting sugar and cholesterol balance.",
     description:
       "Arihanta Naturals Guar is <strong>organically grown</strong> for high fiber content and digestive wellness. Known to support blood sugar balance and cholesterol management. Cultivated using natural farming techniques that protect soil health.",
@@ -108,29 +90,11 @@ export const products = [
   },
 
   {
-    id: 7,
-    name: "इसबगोल (Psyllium Husk)",
-    slug: "isabgol-psyllium-husk",
-    price: "Contact for Price",
-    image: "/images/products/isabgol.png",
-    shortDesc: "Natural fiber for digestive wellness.",
-    description:
-      "Arihanta Naturals Isabgol is <strong>organically grown and minimally processed</strong> to preserve its natural fiber strength. Widely trusted for digestive health and gut cleansing. Gentle, effective, and suitable for daily wellness routines.",
-    benefits: [
-      "Improves digestion",
-      "Gut cleansing",
-      "Natural fiber",
-      "Daily wellness",
-    ],
-    category: "Health Foods",
-  },
-
-  {
-    id: 8,
+    id: 6,
     name: "मेथी (Fenugreek)",
     slug: "fenugreek-methi",
     price: "Contact for Price",
-    image: "/images/products/methi.png",
+    image: "/images/products/Kasuri Fenugreek/Fenugreek-5.png",
     shortDesc: "Medicinal seed for metabolism and sugar control.",
     description:
       "Arihanta Naturals Fenugreek is <strong>organically cultivated</strong> to retain its medicinal and nutritional value. Supports blood sugar regulation, digestion, and metabolism. Carefully dried and packed to preserve aroma and potency.",
@@ -144,11 +108,29 @@ export const products = [
   },
 
   {
-    id: 9,
+    id: 7,
+    name: "चना (Chickpea / Gram)",
+    slug: "chickpea-gram",
+    price: "Contact for Price",
+    image: "/images/products/Chickpea/Chickpea-Main.png",
+    shortDesc: "Protein-rich legumes for energy and strength.",
+    description:
+      "Arihanta Naturals Chickpeas are <strong>organically cultivated</strong>, protein-rich, and naturally nourishing. They support muscle health, digestion, and sustained energy. Grown on our land without harmful chemicals. Carefully sorted and packed to maintain freshness.",
+    benefits: [
+      "High protein",
+      "Supports muscle health",
+      "Improves digestion",
+      "Sustained energy",
+    ],
+    category: "Pulses",
+  },
+
+  {
+    id: 8,
     name: "सरसों (Mustard)",
     slug: "mustard-sarson",
     price: "Contact for Price",
-    image: "/images/products/mustard.png",
+    image: "/images/products/Mustard/Mustard-5.png",
     shortDesc: "Pure mustard with rich natural oils.",
     description:
       "Arihanta Naturals Mustard is <strong>organically grown</strong> for purity, strength, and rich natural oils. Supports digestion, metabolism, and joint health. Carefully processed to retain flavor and nutrition.",
@@ -162,11 +144,47 @@ export const products = [
   },
 
   {
+    id: 9,
+    name: "गेहूं (Wheat)",
+    slug: "wheat",
+    price: "Contact for Price",
+    image: "/images/products/Wheat/Wheat-Main.jpg",
+    shortDesc: "Pure, organically grown daily staple grain.",
+    description:
+      "Arihanta Naturals Wheat is <strong>organically grown on our own farms</strong>, ensuring purity and consistency. Rich in natural fiber and nutrients, it provides daily strength and balanced nutrition. Grown with care passed down through generations of farmers. Cleanly harvested and hygienically packed.",
+    benefits: [
+      "Daily nutrition",
+      "High fiber",
+      "Pure & organic",
+      "Trusted staple",
+    ],
+    category: "Grains",
+  },
+
+  {
     id: 10,
+    name: "इसबगोल (Psyllium Husk)",
+    slug: "isabgol-psyllium-husk",
+    price: "Contact for Price",
+    image: "/images/products/Iserbol/Iserbol.jpg",
+    shortDesc: "Natural fiber for digestive wellness.",
+    description:
+      "Arihanta Naturals Isabgol is <strong>organically grown and minimally processed</strong> to preserve its natural fiber strength. Widely trusted for digestive health and gut cleansing. Gentle, effective, and suitable for daily wellness routines.",
+    benefits: [
+      "Improves digestion",
+      "Gut cleansing",
+      "Natural fiber",
+      "Daily wellness",
+    ],
+    category: "Health Foods",
+  },
+
+  {
+    id: 11,
     name: "सब्ज़ियाँ (Vegetables)",
     slug: "organic-vegetables",
     price: "Seasonal Pricing",
-    image: "/images/products/vegetables.png",
+    image: "/images/products/Vegitable/vegitable.png",
     shortDesc: "Fresh, seasonal organic vegetables.",
     description:
       "Arihanta Naturals Vegetables are <strong>organically grown for our family and yours</strong>. Fresh, seasonal, and naturally cultivated to deliver essential vitamins and immunity support. Harvested only when ready.",
@@ -178,175 +196,154 @@ export const products = [
     ],
     category: "Vegetables",
   },
-
-  {
-    id: 11,
-    name: "पशु आहार (Cattle Feed)",
-    slug: "cattle-feed",
-    price: "Contact for Price",
-    image: "/images/products/cattle-feed.png",
-    shortDesc: "Nutritious organic feed for healthy livestock.",
-    description:
-      "Arihanta Naturals Cattle Feed is <strong>organically grown and nutritionally balanced</strong> for animal health. Supports strength, digestion, and better milk quality. Free from harmful chemicals and artificial enhancers.",
-    benefits: [
-      "Improves animal health",
-      "Better milk quality",
-      "Chemical-free",
-      "Balanced nutrition",
-    ],
-    category: "Cattle Feed",
-  },
 ];
+
+
 
 
 export const productsData = [
   {
     id: 1,
     name: "बाजरा (Pearl Millet)",
-    price: 90,
-    image: "/images/products/1.png",
+    image: "/images/products/Bajra/Bajra-6.png",
     category: "Grains",
   },
   {
     id: 2,
     name: "जौ (Barley)",
     price: 80,
-    image: "/images/products/1.png",
+    image: "/images/products/Barlee/Barlee-5.png",
     category: "Grains",
   },
   {
     id: 3,
     name: "काला गेहूं (Black Wheat)",
     price: 120,
-    image: "/images/products/1.png",
+    image: "/images/products/Black Wheat/Black wheat Main.png",
     category: "Grains",
   },
   {
     id: 4,
     name: "पशु आहार (Cattle Feed)",
     price: 50,
-    image: "/images/products/1.png",
+    image: "/images/products/Cattle Food/Main.png",
     category: "Cattle Feed",
   },
   {
     id: 5,
     name: "चना (Chickpea / Gram)",
     price: 110,
-    image: "/images/products/1.png",
+    image: "/images/products/Chickpea/Chickpea-Main.png",
     category: "Pulses",
   },
   {
     id: 6,
     name: "ग्वार (Cluster Bean / Guar)",
     price: 95,
-    image: "/images/products/1.png",
+    image: "/images/products/Cluster Bean/Cluster Bean-2.png",
     category: "Vegetables",
   },
   {
     id: 7,
     name: "इसबगोल (Psyllium Husk)",
     price: 180,
-    image: "/images/products/1.png",
+    image: "/images/products/Iserbol/Iserbol.jpg",
     category: "Seeds",
   },
   {
     id: 8,
     name: "मेथी (Fenugreek)",
     price: 90,
-    image: "/images/products/1.png",
+    image: "/images/products/Kasuri Fenugreek/Fenugreek-5.png",
     category: "Seeds",
   },
   {
     id: 9,
     name: "सरसों (Mustard)",
     price: 100,
-    image: "/images/products/1.png",
+    image: "/images/products/Mustard/Mustard-5.png",
     category: "Seeds",
   },
   {
     id: 10,
     name: "सब्ज़ियाँ (Vegetables)",
     price: 60,
-    image: "/images/products/1.png",
+    image: "/images/products/Vegitable/vegitable.png",
     category: "Vegetables",
   },
   {
     id: 11,
     name: "गेहूं (Wheat)",
     price: 70,
-    image: "/images/products/1.png",
+    image: "/images/products/Wheat/Wheat-Main.jpg",
     category: "Grains",
   },
   {
     id: 12,
     name: "Desi Ghee",
     price: 650,
-    image: "/images/products/1.png",
+    image: "/images/products/ghee/ghee.png",
     category: "Dairy",
   },
 ];
-
 
 export const galleryItems = [
   {
     category: "Infrastructure",
     images: {
-      "0": "/images/gallery/buildings/buildings.jpg",
-      "1": '/images/gallery/buildings/2.jpg',
-      "3": '/images/gallery/buildings/4.jpg',
-      "4": '/images/gallery/buildings/5.jpg',
-      "5": '/images/gallery/buildings/6.jpg',
+      0: "/images/gallery/buildings/buildings.jpg",
+      1: "/images/gallery/buildings/2.jpg",
+      3: "/images/gallery/buildings/4.jpg",
+      4: "/images/gallery/buildings/5.jpg",
+      5: "/images/gallery/buildings/6.jpg",
     },
   },
   {
     category: "Cattle Care",
     images: {
-      "1": "/images/gallery/cattles/cattles.jpg",
-      "2": '/images/gallery/cattles/2.jpg',
-      "3": '/images/gallery/cattles/3.jpg',
-      "4": '/images/gallery/cattles/4.jpg',
+      1: "/images/gallery/cattles/cattles.jpg",
+      2: "/images/gallery/cattles/2.jpg",
+      3: "/images/gallery/cattles/3.jpg",
+      4: "/images/gallery/cattles/4.jpg",
     },
   },
   {
     category: "Organic Crops",
     images: {
-      "1": "/images/gallery/crops/crops.jpg",
-      "2": '/images/gallery/crops/2.jpg',
-      "3": '/images/gallery/crops/3.jpg',
-      "4": '/images/gallery/crops/4.jpg',
-      "5": '/images/gallery/crops/5.jpg',
-      "6": '/images/gallery/crops/6.jpg',
-      "7": '/images/gallery/crops/7.jpg',
-      "8": '/images/gallery/crops/8.jpg',
-      "9": '/images/gallery/crops/9.jpg',
-      "10": '/images/gallery/crops/10.jpg',
-      "11": '/images/gallery/crops/11.jpg',
+      1: "/images/gallery/crops/crops.jpg",
+      2: "/images/gallery/crops/2.jpg",
+      3: "/images/gallery/crops/3.jpg",
+      4: "/images/gallery/crops/4.jpg",
+      5: "/images/gallery/crops/5.jpg",
+      6: "/images/gallery/crops/6.jpg",
+      7: "/images/gallery/crops/7.jpg",
+      8: "/images/gallery/crops/8.jpg",
+      9: "/images/gallery/crops/9.jpg",
+      10: "/images/gallery/crops/10.jpg",
+      11: "/images/gallery/crops/11.jpg",
     },
   },
 
   {
     category: "Traditional Farming",
     images: {
-      "1": "/images/gallery/tractor/tractor.jpg",
-      "2": "/images/gallery/tractor/2.jpg",
-      "3": "/images/gallery/tractor/3.jpg",
-      "4": "/images/gallery/tractor/4.jpg",
-      "5": "/images/gallery/tractor/5.jpg",
+      1: "/images/gallery/tractor/tractor.jpg",
+      2: "/images/gallery/tractor/2.jpg",
+      3: "/images/gallery/tractor/3.jpg",
+      4: "/images/gallery/tractor/4.jpg",
+      5: "/images/gallery/tractor/5.jpg",
     },
   },
   {
     category: "Natural Water Sources",
     images: {
-      "1": "/images/gallery/well/well.jpg",
-      "2": "/images/gallery/well/pound.jpg",
-      "3": "/images/gallery/well/1.jpg",
-      "4": "/images/gallery/well/2.jpg",
+      1: "/images/gallery/well/well.jpg",
+      2: "/images/gallery/well/pound.jpg",
+      3: "/images/gallery/well/1.jpg",
+      4: "/images/gallery/well/2.jpg",
     },
   },
 ];
-
-
-
 
 export const testimonialsData = [
   {
