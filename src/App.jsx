@@ -5,10 +5,10 @@ import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/HeroSection/HeroSection";
 import BestSellers from "./components/Bestsellers/Bestsellers";
 import PuritySection from "./components/PuritySection/PuritySection";
-import Testimonials from "./components/Testimonials/Testimonials";
 import Footer from "./components/Footer/Footer";
 import { FadeLoader } from "react-spinners";
 import ScrollToTop from "./components/ScrollToTop";
+import Testimonials from "./components/Testimonials/Testimonials";
 
 // Lazy-loaded pages
 const AboutUs = lazy(() => import("./components/About/About"));

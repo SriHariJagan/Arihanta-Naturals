@@ -53,10 +53,12 @@ const AboutUs = () => {
       <section className={styles.textSection}>
         <h2>Our Philosophy</h2>
         <p>
-          We believe food should nourish the body and respect nature. Every
-          product from Arihanta Naturals is produced using
-          <strong> traditional cold-pressed techniques</strong>, free from
-          chemicals, preservatives, and artificial processing.
+          At Arihanta Naturals, we believe food should nurture the body and
+          honor nature. Every product is thoughtfully crafted using time-honored
+          traditional methods, free from chemicals, preservatives, and
+          artificial processing. We are committed to delivering pure, wholesome
+          nourishment that sustains health, supports farmers, and preserves the
+          natural balance of the earth.
         </p>
       </section>
 
@@ -179,18 +181,13 @@ const AboutUs = () => {
             </tr>
 
             <tr>
-              <th>Processing Method</th>
-              <td>Traditional Wooden Cold-Press (Kachi Ghani)</td>
-            </tr>
-
-            <tr>
               <th>Core Values</th>
               <td>Purity • Transparency • Sustainability</td>
             </tr>
 
             <tr>
               <th>Founder</th>
-              <td>Sunil Mehta</td>
+              <td>Mahavir Prasad Mehta</td>
             </tr>
 
             <tr>

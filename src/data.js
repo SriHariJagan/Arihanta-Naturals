@@ -345,26 +345,56 @@ export const galleryItems = [
   },
 ];
 
+
+
 export const testimonialsData = [
   {
     id: 1,
-    name: "Aisha Sharma",
+    name: "Prashant Singh",
+    location: "Bangalore",
     rating: 5,
     testimonial:
-      "Pure Harvest Organics has transformed our kitchen! The quality of their products is unmatched, and the flavor of everything we've tried is simply incredible. Highly recommend the Ghee and Spices!",
+      "Arihanta Naturals truly reminds us of the food we grew up eating—fresh, pure, and full of natural taste. Knowing the crops are grown in their own fields gives complete peace of mind. This is not just food; it’s care for our family’s health.",
   },
   {
     id: 2,
-    name: "Rahul Verma",
+    name: "Harish Kumar",
+    location: "Pilani",
     rating: 5,
     testimonial:
-      "I've been looking for truly organic products, and this is it. The cold-pressed oils are fantastic for cooking, and I feel good knowing exactly where my food comes from. Excellent service too!",
+      "In a market full of labels, Arihanta Naturals stands out for honesty. The quality is consistently excellent, chemical-free, and genuinely fresh. We trust it enough to serve it to our children every day.",
   },
   {
     id: 3,
-    name: "Priya Singh",
+    name: "Sameer Kumar",
+    location: "Hyderabad",
     rating: 5,
     testimonial:
-      "Their pulses are fresh and cook perfectly every time. I appreciate the variety and the commitment to sustainable farming. My family loves the millets for breakfast.",
+      "From their fields to our kitchen, Arihanta Naturals delivers unmatched freshness. The aroma, taste, and purity clearly reflect the effort behind natural farming.",
+  },
+  {
+    id: 4,
+    name: "Gaurav Shirpurkar",
+    location: "Nagpur",
+    rating: 5,
+    testimonial:
+      "Pure, fresh, and authentic. Arihanta Naturals truly brings back the real taste of nature.",
+  },
+  {
+    id: 5,
+    name: "Avant Mutha",
+    location: "Jaipur",
+    rating: 5,
+    testimonial:
+      "Arihanta Naturals is not just a brand—it’s a promise of purity, tradition, and health. Every product reflects their commitment to natural farming.",
+  },
+  {
+    id: 6,
+    name: "Vipul Varshney",
+    location: "Gurugram",
+    rating: 5,
+    testimonial:
+      "Arihanta Naturals feels like food from our own खेत (farm). No shortcuts, no compromise—just natural goodness and trust in every grain.",
   },
 ];
+
