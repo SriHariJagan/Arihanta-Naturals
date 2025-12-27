@@ -22,8 +22,9 @@ const Testimonials = () => {
                 “{item.testimonial}”
               </p>
 
-              <div className={styles.author}>
-                {item.name}
+              <div className={styles.authorBox}>
+                <span className={styles.author}>{item.name}</span>
+                <span className={styles.location}>{item.location}</span>
               </div>
             </div>
           ))}
